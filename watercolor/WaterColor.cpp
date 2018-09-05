@@ -12,6 +12,10 @@
 #include "Debug.h"
 using namespace cv;
 
+WaterColor::WaterColor(std::string pDir) {
+    processDir = pDir;
+}
+
 void texture(Mat &src, Mat &dst)
 {
 	vector<Mat> srcs;
@@ -37,8 +41,6 @@ void WaterColor::deal(Mat &src, Mat &dst)
 {
 	dst = src.clone();
 
-	std::string path = "/Users/visualcamp/Downloads/";
-
 	// Color transform
 	Debug() << "color transform...";
 	Mat myColorTransform;
@@ -46,7 +48,7 @@ void WaterColor::deal(Mat &src, Mat &dst)
 	//    colorAdjustment.chooseOneStyle("blue");   // preprocessed image style
 	colorAdjustment.loadExampleStyle();
 	colorAdjustment.deal(src, myColorTransform);
-	imwrite(path + "process/01_colorTransform.jpg", myColorTransform);
+	imwrite(processDir + "01_colorTransform.jpg", myColorTransform);
 
 	// Saliency
 	Debug() << "saliency...";
@@ -54,46 +56,46 @@ void WaterColor::deal(Mat &src, Mat &dst)
 	SaliencyDistance saliencyDiatance;
 	saliencyDiatance.deal(myColorTransform, mySaliency, myDis);
 	//    imwrite(path+"process/dis.jpg", myDis*255);
-	imwrite(path + "process/02_saliency.jpg", mySaliency);
+	imwrite(processDir + "02_saliency.jpg", mySaliency);
 
 	// Abstraciton
 	Debug() << "abstraction...";
 	Mat myAbstraction;
 	Abstraction abstraction;
 	abstraction.deal(myColorTransform, mySaliency, myDis, myAbstraction);
-	imwrite(path + "process/03_abstraciton.jpg", myAbstraction);
+	imwrite(processDir + "03_abstraciton.jpg", myAbstraction);
 
 	// Add effects
 	Debug() << "wet in wet...";
 	Mat myWetInWet, myCanny;
 	WetInWet wetInWet;
 	wetInWet.deal(src, myAbstraction, myWetInWet, myCanny);
-	imwrite(path + "process/04_wetinwet.jpg", myWetInWet);
+	imwrite(processDir + "04_wetinwet.jpg", myWetInWet);
 
 	// Hand tremor
 	Mat myHandTremor;
 	HandTremorEffect handTremorEffect;
 	handTremorEffect.deal(myWetInWet, myHandTremor, myCanny);
-	imwrite(path + "process/05_handtremor.jpg", myHandTremor);
+	imwrite(processDir + "05_handtremor.jpg", myHandTremor);
 
 	// not implemented
 	//    cv::Mat testtest;
 	//    EdgeDarkening edgeDarkening;
 	//    edgeDarkening.deal(myWetInWet, testtest);
-	//    imwrite(path+"process/EdgeDarkening.jpg", testtest);
+	//    imwrite(processDir + "EdgeDarkening.jpg", testtest);
 	//
 	//    Granulation granulation;
 	//    granulation.deal(myWetInWet, testtest);
-	//    imwrite(path+"process/Granulation.jpg", testtest);
+	//    imwrite(processDir + "Granulation.jpg", testtest);
 	//
 	//    TurblenceFlow turblenceFlow;
 	//    turblenceFlow.deal(myWetInWet, testtest);
-	//    imwrite(path+"process/TurblenceFlow.jpg", testtest);
+	//    imwrite(processDir + "TurblenceFlow.jpg", testtest);
 	//
 	//    //After deal
 	//    PigmentVariation pigmentVariation;
 	//    pigmentVariation.deal(myWetInWet, testtest);
-	//    imwrite(path+"process/PigmentVariation.jpg", testtest);
+	//    imwrite(processDir + "PigmentVariation.jpg", testtest);
 	//
 	//    DoubleToImage(myHandTremor, myHandTremor);
 	//    DoubleToImage(myHandTremor, myHandTremor);
@@ -101,7 +103,7 @@ void WaterColor::deal(Mat &src, Mat &dst)
 
 	Mat myTexture;
 	texture(myWetInWet, myTexture);
-	imwrite(path + "process/09_texture.png", myTexture);
+	imwrite(processDir + "09_texture.png", myTexture);
 
 	dst = myTexture;
 }

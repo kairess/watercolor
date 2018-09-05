@@ -1,5 +1,7 @@
 #include <iostream>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 #include "WaterColor.h"
 #include "ToolBox.h"
 #include "Debug.h"
@@ -10,33 +12,37 @@ int main(int argc, char *argv[])
     char *dir = getcwd(NULL, 0);
     printf("Current dir: %s\n", dir);
 
-    std::string base_path = "/Users/visualcamp/Downloads/";
+    std::string basePath, outputPath;
+    std::string inputPath = argv[1];
 
-    std::string inName = "src-small.jpg";
-    //    std::string inDir = "/Users/visualcamp/Development/Clanguage/waterColor_original/waterColor/waterColor/src/" + inName;
-    std::string inDir = "/Users/visualcamp/Development/iris_tracking/colorlens/eye_00000000.png";
-    std::string outName = "output.png";
-    std::string outDir = base_path + outName;
+    std::string inputFilename;
+    size_t sep = inputPath.find_last_of("\\/");
+    
+    inputFilename = inputPath.substr(sep + 1, inputPath.size() - sep - 1);
+    basePath = inputPath.substr(0, sep + 1);
 
-    if (argc == 3)
+    outputPath = basePath + "out_" + inputFilename;
+    
+    const int dir_err = ::mkdir((basePath + inputFilename + "_process").c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    if (-1 == dir_err)
     {
-        inDir = std::string(argv[1]);
-        outDir = std::string(argv[2]);
+        Debug() << "Error creating directory";
     }
 
-    //read picture
-    cv::Mat input = cv::imread(inDir), output;
+    // read picture
+    cv::Mat input = cv::imread(inputPath), output;
     Debug() << "img size: " << input.rows << " " << input.cols;
 
-    //process
-    WaterColor watercolor;
-    cv::imwrite(base_path + "process/src.jpg", input);
+    // process
+    WaterColor watercolor(basePath + inputFilename + "_process/");
+    cv::imwrite(basePath + "process/src.jpg", input);
     watercolor.deal(input, output);
 
-    //show & store result
+    // show & store result
+    cv::imwrite(outputPath, output);
+    cv::imwrite(basePath + "process/dst.png", output);
+    
     cv::imshow("src", input);
     cv::imshow("dst", output);
-    cv::imwrite(outDir, output);
-    cv::imwrite(base_path + "process/dst.png", output);
     cv::waitKey();
 }
