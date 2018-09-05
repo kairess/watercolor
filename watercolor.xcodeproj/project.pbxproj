@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D2F7516213F76CC0072B6F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7515213F76CC0072B6F9 /* main.cpp */; };
+		2D2F751E213F7CE60072B6F9 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F751D213F7CE50072B6F9 /* Debug.cpp */; };
+		2D2F7521213F7CFA0072B6F9 /* WaterColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7520213F7CFA0072B6F9 /* WaterColor.cpp */; };
+		2D2F7524213F7D190072B6F9 /* ToolBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7523213F7D180072B6F9 /* ToolBox.cpp */; };
+		2D2F752E213F7D4B0072B6F9 /* MeanShift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7527213F7D3C0072B6F9 /* MeanShift.cpp */; };
+		2D2F752F213F7D530072B6F9 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F752C213F7D3C0072B6F9 /* Geometry.cpp */; };
+		2D2F7532213F7FB30072B6F9 /* ColorAdjustment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7530213F7FB30072B6F9 /* ColorAdjustment.cpp */; };
+		2D2F7535213F7FC60072B6F9 /* SaliencyDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7534213F7FC60072B6F9 /* SaliencyDistance.cpp */; };
+		2D2F7538213F7FEC0072B6F9 /* Abstraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7536213F7FEC0072B6F9 /* Abstraction.cpp */; };
+		2D2F753B213F80040072B6F9 /* WetInWet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F753A213F80040072B6F9 /* WetInWet.cpp */; };
+		2D2F753E213F803B0072B6F9 /* HandTremorEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F753C213F803B0072B6F9 /* HandTremorEffect.cpp */; };
+		2D2F7541213F80480072B6F9 /* EdgeDarkening.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7540213F80480072B6F9 /* EdgeDarkening.cpp */; };
+		2D2F7546213F80F10072B6F9 /* Granulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7544213F80F10072B6F9 /* Granulation.cpp */; };
+		2D2F7549213F81090072B6F9 /* TurblenceFlow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7547213F81090072B6F9 /* TurblenceFlow.cpp */; };
+		2D2F754F213F81300072B6F9 /* PigmentVariation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F754D213F81300072B6F9 /* PigmentVariation.cpp */; };
+		2D2F7554213F927F0072B6F9 /* PreGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7551213F927F0072B6F9 /* PreGraph.cpp */; };
+		2D2F7555213F927F0072B6F9 /* SLIC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F7552213F927F0072B6F9 /* SLIC.cpp */; };
+		2D2F7558213FAC120072B6F9 /* texture.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D2F7557213F963D0072B6F9 /* texture.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D2F7510213F76CC0072B6F9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				2D2F7558213FAC120072B6F9 /* texture.jpg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D2F7512213F76CC0072B6F9 /* watercolor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = watercolor; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2F7515213F76CC0072B6F9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2D2F751C213F7CDC0072B6F9 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
+		2D2F751D213F7CE50072B6F9 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
+		2D2F751F213F7CF40072B6F9 /* WaterColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterColor.h; sourceTree = "<group>"; };
+		2D2F7520213F7CFA0072B6F9 /* WaterColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterColor.cpp; sourceTree = "<group>"; };
+		2D2F7522213F7D130072B6F9 /* ToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBox.h; sourceTree = "<group>"; };
+		2D2F7523213F7D180072B6F9 /* ToolBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolBox.cpp; sourceTree = "<group>"; };
+		2D2F7527213F7D3C0072B6F9 /* MeanShift.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MeanShift.cpp; sourceTree = "<group>"; };
+		2D2F7528213F7D3C0072B6F9 /* MeanShift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeanShift.h; sourceTree = "<group>"; };
+		2D2F752C213F7D3C0072B6F9 /* Geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
+		2D2F752D213F7D3C0072B6F9 /* Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		2D2F7530213F7FB30072B6F9 /* ColorAdjustment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorAdjustment.cpp; sourceTree = "<group>"; };
+		2D2F7531213F7FB30072B6F9 /* ColorAdjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorAdjustment.h; sourceTree = "<group>"; };
+		2D2F7534213F7FC60072B6F9 /* SaliencyDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaliencyDistance.cpp; sourceTree = "<group>"; };
+		2D2F7536213F7FEC0072B6F9 /* Abstraction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Abstraction.cpp; sourceTree = "<group>"; };
+		2D2F7537213F7FEC0072B6F9 /* Abstraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Abstraction.h; sourceTree = "<group>"; };
+		2D2F7539213F80040072B6F9 /* WetInWet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WetInWet.h; sourceTree = "<group>"; };
+		2D2F753A213F80040072B6F9 /* WetInWet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WetInWet.cpp; sourceTree = "<group>"; };
+		2D2F753C213F803B0072B6F9 /* HandTremorEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HandTremorEffect.cpp; sourceTree = "<group>"; };
+		2D2F753D213F803B0072B6F9 /* HandTremorEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTremorEffect.h; sourceTree = "<group>"; };
+		2D2F753F213F80480072B6F9 /* EdgeDarkening.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeDarkening.h; sourceTree = "<group>"; };
+		2D2F7540213F80480072B6F9 /* EdgeDarkening.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EdgeDarkening.cpp; sourceTree = "<group>"; };
+		2D2F7543213F80AB0072B6F9 /* SaliencyDistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaliencyDistance.h; sourceTree = "<group>"; };
+		2D2F7544213F80F10072B6F9 /* Granulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Granulation.cpp; sourceTree = "<group>"; };
+		2D2F7545213F80F10072B6F9 /* Granulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Granulation.h; sourceTree = "<group>"; };
+		2D2F7547213F81090072B6F9 /* TurblenceFlow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TurblenceFlow.cpp; sourceTree = "<group>"; };
+		2D2F7548213F81090072B6F9 /* TurblenceFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurblenceFlow.h; sourceTree = "<group>"; };
+		2D2F754D213F81300072B6F9 /* PigmentVariation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PigmentVariation.cpp; sourceTree = "<group>"; };
+		2D2F754E213F81300072B6F9 /* PigmentVariation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PigmentVariation.h; sourceTree = "<group>"; };
+		2D2F7550213F927F0072B6F9 /* SLIC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLIC.h; sourceTree = "<group>"; };
+		2D2F7551213F927F0072B6F9 /* PreGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PreGraph.cpp; sourceTree = "<group>"; };
+		2D2F7552213F927F0072B6F9 /* SLIC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SLIC.cpp; sourceTree = "<group>"; };
+		2D2F7553213F927F0072B6F9 /* PreGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreGraph.h; sourceTree = "<group>"; };
+		2D2F7557213F963D0072B6F9 /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D2F750F213F76CC0072B6F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D2F7509213F76CC0072B6F9 = {
+			isa = PBXGroup;
+			children = (
+				2D2F7514213F76CC0072B6F9 /* watercolor */,
+				2D2F7513213F76CC0072B6F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D2F7513213F76CC0072B6F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F7512213F76CC0072B6F9 /* watercolor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D2F7514213F76CC0072B6F9 /* watercolor */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F7556213F962A0072B6F9 /* assets */,
+				2D2F7525213F7D3C0072B6F9 /* include */,
+				2D2F7536213F7FEC0072B6F9 /* Abstraction.cpp */,
+				2D2F7537213F7FEC0072B6F9 /* Abstraction.h */,
+				2D2F7530213F7FB30072B6F9 /* ColorAdjustment.cpp */,
+				2D2F7531213F7FB30072B6F9 /* ColorAdjustment.h */,
+				2D2F751D213F7CE50072B6F9 /* Debug.cpp */,
+				2D2F751C213F7CDC0072B6F9 /* Debug.h */,
+				2D2F7540213F80480072B6F9 /* EdgeDarkening.cpp */,
+				2D2F753F213F80480072B6F9 /* EdgeDarkening.h */,
+				2D2F7544213F80F10072B6F9 /* Granulation.cpp */,
+				2D2F7545213F80F10072B6F9 /* Granulation.h */,
+				2D2F753C213F803B0072B6F9 /* HandTremorEffect.cpp */,
+				2D2F753D213F803B0072B6F9 /* HandTremorEffect.h */,
+				2D2F754D213F81300072B6F9 /* PigmentVariation.cpp */,
+				2D2F754E213F81300072B6F9 /* PigmentVariation.h */,
+				2D2F7534213F7FC60072B6F9 /* SaliencyDistance.cpp */,
+				2D2F7543213F80AB0072B6F9 /* SaliencyDistance.h */,
+				2D2F7523213F7D180072B6F9 /* ToolBox.cpp */,
+				2D2F7522213F7D130072B6F9 /* ToolBox.h */,
+				2D2F7547213F81090072B6F9 /* TurblenceFlow.cpp */,
+				2D2F7548213F81090072B6F9 /* TurblenceFlow.h */,
+				2D2F7520213F7CFA0072B6F9 /* WaterColor.cpp */,
+				2D2F751F213F7CF40072B6F9 /* WaterColor.h */,
+				2D2F753A213F80040072B6F9 /* WetInWet.cpp */,
+				2D2F7539213F80040072B6F9 /* WetInWet.h */,
+				2D2F7515213F76CC0072B6F9 /* main.cpp */,
+			);
+			path = watercolor;
+			sourceTree = "<group>";
+		};
+		2D2F7525213F7D3C0072B6F9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F7526213F7D3C0072B6F9 /* meanshift */,
+				2D2F7529213F7D3C0072B6F9 /* saliency */,
+				2D2F752B213F7D3C0072B6F9 /* geometry */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2D2F7526213F7D3C0072B6F9 /* meanshift */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F7527213F7D3C0072B6F9 /* MeanShift.cpp */,
+				2D2F7528213F7D3C0072B6F9 /* MeanShift.h */,
+			);
+			path = meanshift;
+			sourceTree = "<group>";
+		};
+		2D2F7529213F7D3C0072B6F9 /* saliency */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F7551213F927F0072B6F9 /* PreGraph.cpp */,
+				2D2F7553213F927F0072B6F9 /* PreGraph.h */,
+				2D2F7552213F927F0072B6F9 /* SLIC.cpp */,
+				2D2F7550213F927F0072B6F9 /* SLIC.h */,
+			);
+			path = saliency;
+			sourceTree = "<group>";
+		};
+		2D2F752B213F7D3C0072B6F9 /* geometry */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F752C213F7D3C0072B6F9 /* Geometry.cpp */,
+				2D2F752D213F7D3C0072B6F9 /* Geometry.h */,
+			);
+			path = geometry;
+			sourceTree = "<group>";
+		};
+		2D2F7556213F962A0072B6F9 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				2D2F7557213F963D0072B6F9 /* texture.jpg */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D2F7511213F76CC0072B6F9 /* watercolor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D2F7519213F76CC0072B6F9 /* Build configuration list for PBXNativeTarget "watercolor" */;
+			buildPhases = (
+				2D2F750E213F76CC0072B6F9 /* Sources */,
+				2D2F750F213F76CC0072B6F9 /* Frameworks */,
+				2D2F7510213F76CC0072B6F9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watercolor;
+			productName = watercolor;
+			productReference = 2D2F7512213F76CC0072B6F9 /* watercolor */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D2F750A213F76CC0072B6F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = kairess;
+				TargetAttributes = {
+					2D2F7511213F76CC0072B6F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2D2F750D213F76CC0072B6F9 /* Build configuration list for PBXProject "watercolor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2D2F7509213F76CC0072B6F9;
+			productRefGroup = 2D2F7513213F76CC0072B6F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D2F7511213F76CC0072B6F9 /* watercolor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D2F750E213F76CC0072B6F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2F7535213F7FC60072B6F9 /* SaliencyDistance.cpp in Sources */,
+				2D2F7521213F7CFA0072B6F9 /* WaterColor.cpp in Sources */,
+				2D2F7532213F7FB30072B6F9 /* ColorAdjustment.cpp in Sources */,
+				2D2F7516213F76CC0072B6F9 /* main.cpp in Sources */,
+				2D2F7555213F927F0072B6F9 /* SLIC.cpp in Sources */,
+				2D2F753B213F80040072B6F9 /* WetInWet.cpp in Sources */,
+				2D2F751E213F7CE60072B6F9 /* Debug.cpp in Sources */,
+				2D2F7554213F927F0072B6F9 /* PreGraph.cpp in Sources */,
+				2D2F7524213F7D190072B6F9 /* ToolBox.cpp in Sources */,
+				2D2F752E213F7D4B0072B6F9 /* MeanShift.cpp in Sources */,
+				2D2F7549213F81090072B6F9 /* TurblenceFlow.cpp in Sources */,
+				2D2F7538213F7FEC0072B6F9 /* Abstraction.cpp in Sources */,
+				2D2F753E213F803B0072B6F9 /* HandTremorEffect.cpp in Sources */,
+				2D2F754F213F81300072B6F9 /* PigmentVariation.cpp in Sources */,
+				2D2F7541213F80480072B6F9 /* EdgeDarkening.cpp in Sources */,
+				2D2F752F213F7D530072B6F9 /* Geometry.cpp in Sources */,
+				2D2F7546213F80F10072B6F9 /* Granulation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2D2F7517213F76CC0072B6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2D2F7518213F76CC0072B6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2D2F751A213F76CC0072B6F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMGDL6J6CA;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/3.4.1_5/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.4.1_5/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = (
+					include/geometry,
+					include/meanshift,
+					include/saliency,
+				);
+			};
+			name = Debug;
+		};
+		2D2F751B213F76CC0072B6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMGDL6J6CA;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/3.4.1_5/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.4.1_5/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = (
+					include/geometry,
+					include/meanshift,
+					include/saliency,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D2F750D213F76CC0072B6F9 /* Build configuration list for PBXProject "watercolor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2F7517213F76CC0072B6F9 /* Debug */,
+				2D2F7518213F76CC0072B6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D2F7519213F76CC0072B6F9 /* Build configuration list for PBXNativeTarget "watercolor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2F751A213F76CC0072B6F9 /* Debug */,
+				2D2F751B213F76CC0072B6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D2F750A213F76CC0072B6F9 /* Project object */;
+}
