@@ -12,8 +12,9 @@
 #include "Debug.h"
 using namespace cv;
 
-WaterColor::WaterColor(std::string pDir) {
+WaterColor::WaterColor(std::string pDir, std::string st) {
     processDir = pDir;
+    style = st;
 }
 
 void texture(Mat &src, Mat &dst)
@@ -45,8 +46,7 @@ void WaterColor::deal(Mat &src, Mat &dst)
 	Debug() << "color transform...";
 	Mat myColorTransform;
 	ColorAdjustment colorAdjustment;
-	//    colorAdjustment.chooseOneStyle("blue");   // preprocessed image style
-	colorAdjustment.loadExampleStyle();
+    colorAdjustment.chooseOneStyle(style);   // preprocessed image style
 	colorAdjustment.deal(src, myColorTransform);
 	imwrite(processDir + "01_colorTransform.jpg", myColorTransform);
 
@@ -73,10 +73,10 @@ void WaterColor::deal(Mat &src, Mat &dst)
 	imwrite(processDir + "04_wetinwet.jpg", myWetInWet);
 
 	// Hand tremor
-	Mat myHandTremor;
-	HandTremorEffect handTremorEffect;
-	handTremorEffect.deal(myWetInWet, myHandTremor, myCanny);
-	imwrite(processDir + "05_handtremor.jpg", myHandTremor);
+    Mat myHandTremor;
+    HandTremorEffect handTremorEffect;
+    handTremorEffect.deal(myWetInWet, myHandTremor, myCanny);
+    imwrite(processDir + "05_handtremor.jpg", myHandTremor);
 
 	// not implemented
 	//    cv::Mat testtest;

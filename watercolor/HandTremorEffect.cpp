@@ -209,7 +209,8 @@ void HandTremorEffect::deal(Mat &src, Mat &dst, Mat &myCanny)
 					if (ArraySpace::inMap(msk, x, j))
 					{
 						//Debug() << "Error";
-						msk.at<uchar>(x, j) = 2; // dataAt<uchar>(msk, x, j) = 0;
+						msk.at<uchar>(x, j) = 2;
+                        dataAt<uchar>(msk, x, j) = 0; // bug?
 					}
 				}
 			}

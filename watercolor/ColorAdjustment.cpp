@@ -125,6 +125,12 @@ void ColorAdjustment::loadExampleStyle()
 void ColorAdjustment::chooseOneStyle(std::string style)
 {
 	Debug() << "choose style: " << style;
+    
+    if (style == "sample") {
+        loadExampleStyle();
+        return;
+    }
+
 	std::string dir = "styleLib/" + style + "/list.txt";
 	ifstream fin(dir);
 	char name[300];

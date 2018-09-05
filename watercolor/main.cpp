@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     Debug() << "img size: " << input.rows << " " << input.cols;
 
     // process
-    WaterColor watercolor(basePath + inputFilename + "_process/");
+    WaterColor watercolor(basePath + inputFilename + "_process/", argv[2]);
     cv::imwrite(basePath + "process/src.jpg", input);
     watercolor.deal(input, output);
 
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
     cv::imwrite(outputPath, output);
     cv::imwrite(basePath + "process/dst.png", output);
     
-    cv::imshow("src", input);
-    cv::imshow("dst", output);
-    cv::waitKey();
+//    cv::imshow("src", input);
+//    cv::imshow("dst", output);
+//    cv::waitKey();
 }

@@ -10,7 +10,7 @@ void meanShift(Mat &src, Mat &dst)
 	pyrMeanShiftFiltering(src, dst, 40, 40, 3);
 	RNG rng = theRNG();
 	Mat mask(dst.rows + 2, dst.cols + 2, CV_8UC1, Scalar::all(0));
-	for (int i = 0; i < dst.rows; i++) //opencv图像等矩阵也是基于0索引
+	for (int i = 0; i < dst.rows; i++)
 		for (int j = 0; j < dst.cols; j++)
 			if (mask.at<uchar>(i + 1, j + 1) == 0)
 			{

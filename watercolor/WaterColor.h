@@ -7,7 +7,9 @@ class WaterColor
 {
 public:
     std::string processDir;
-    WaterColor(std::string processDir);
+    std::string style;
+
+    WaterColor(std::string pDir, std::string st);
 	void deal(const cv::Mat &input, cv::Mat &output);
 	void deal(cv::Mat &src, cv::Mat &dst);
 };

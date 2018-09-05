@@ -66,6 +66,10 @@
             argument = "/Users/visualcamp/Pictures/watercolor/src.jpg"
             isEnabled = "YES">
          </CommandLineArgument>
+         <CommandLineArgument
+            argument = "colorful"
+            isEnabled = "YES">
+         </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
